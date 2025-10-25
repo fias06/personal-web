@@ -69,7 +69,7 @@ function App() {
         <br />
 
         <p className="new-resume">
-          <a href="Saif Shaikh Resume.pdf" className="new-resume" target="_blank" rel="noopener noreferrer">
+          <a href="/Saif Shaikh Resume.pdf" className="new-resume" target="_blank" rel="noopener noreferrer">
             Resume PDF
           </a>
         </p>
@@ -101,7 +101,7 @@ function App() {
       <div className="bottom-section" id="about-section">
         <p className="dark-back-head">About me</p>
         <div className="container">
-          <img src="photo3.jpg" alt="Profile Photo" className="profile-pic" />
+          <img src="/photo3.jpg" alt="Profile Photo" className="profile-pic" />
           <p className="dark-back-body">
             I am Saif Shaikh, a Math and Computer Science student at McGill University. I was born in India, grew up in
             Saudi Arabia, and now I am studying in Canada. I am passionate about technology and enjoy working on
@@ -351,7 +351,7 @@ function App() {
             rel="noopener noreferrer"
             className="youtube-preview"
           >
-            <img src="logo.png" alt="Instagram reel thumbnail" />
+            <img src="/logo.png" alt="Instagram reel thumbnail" />
             <div className="play-button">
               <svg viewBox="0 0 100 100" width="60" height="60">
                 <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
@@ -377,7 +377,7 @@ function App() {
             </p>
           </div>
           <a href="" target="_blank" rel="noopener noreferrer" className="youtube-preview">
-            <img src="radhwa.png" alt="Instagram reel thumbnail" />
+            <img src="/radhwa.png" alt="Instagram reel thumbnail" />
             <div className="play-button">
               <svg viewBox="0 0 100 100" width="60" height="60">
                 <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
