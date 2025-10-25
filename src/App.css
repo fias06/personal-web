@@ -1,0 +1,111 @@
+const styleBlock = `
+  <style>
+    :root {
+      --color-background-light: ${config.colors['background-light']};
+      --color-primary-dark: ${config.colors['primary-dark']};
+      --color-accent-red: ${config.colors['accent-red']};
+      --color-secondary-text: ${config.colors['secondary-text']};
+      --color-teal-company: ${config.colors['teal-company']};
+    }
+
+    body {
+      text-align: center;
+      background-color: var(--color-background-light);
+      color: var(--color-primary-dark);
+      font-family: ${config.font.sans.join(', ')};
+      scroll-behavior: smooth;
+      padding: 0;
+    }
+
+    /* NAVBAR STYLING */
+    nav {
+      background-color: var(--color-primary-dark);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    nav a {
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--color-accent-red);
+      transform: translateY(-1px);
+    }
+
+    /* HERO TITLE CENTERING */
+    .man-center {
+      font-size: clamp(3rem, 8vw, 11rem);
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      line-height: 1;
+    }
+
+    /* TIMELINE CENTER ADJUSTMENTS */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .timeline-item {
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+    }
+
+    /* CONTACT CARDS CENTER ALIGNMENT */
+    .contact-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-card {
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: scale(1.05);
+      background-color: #22223b;
+    }
+
+    /* ABOUT IMAGE CENTER */
+    .profile-pic {
+      display: block;
+      margin: 0 auto;
+      border-radius: 9999px;
+    }
+
+    /* RESPONSIVE NAV FIXES */
+    @media screen and (max-width: 960px) {
+      .navbar__toggle .bar {
+        width: 25px;
+        height: 4px; 
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+        display: block;
+        cursor: pointer;
+      }
+      .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+      }
+      .navbar__item {
+        width: 100%;
+      }
+      nav {
+        text-align: center;
+      }
+      .timeline-item {
+        text-align: center;
+      }
+    }
+  </style>
+`;
